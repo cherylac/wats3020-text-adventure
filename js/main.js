@@ -10,14 +10,14 @@ let currentPage = null;
 ////////////////////////////////////////////////////////////////////////////////
 
 // TODO: Prompt the user for their name. Store the name in the variable `playerName`.
-playerName = prompt("What is your name?"");
+playerName = prompt("What is your name?");
     
 
 
 // TODO: Create a function called `getCurrentPage()`. It should accept one
 // parameter, which is the `slug` for the current page. This function will fetch
 // the current page and return a page object using the `slug` value for a key.
-function getCurrentPage (slug){
+function getCurrentPage(slug){
     currentPage = storyData[slug];
     return currentPage;
 }
@@ -25,9 +25,9 @@ function getCurrentPage (slug){
 
 // TODO: Create a function called `recordChoice()` that will accept a `slug`
 // parameter and add it to the `choiceList` Array (probably using `push()`).
-function recordChoice (slug){
+function recordChoice(slug){
     choiceList.push(slug);
-    console.log(added ${slug} to choiceList Array.');
+    console.log(added ${slug} to choiceList Array.);
 }
 
 
