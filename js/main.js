@@ -3,19 +3,14 @@ let playerName = "";
 let choiceList = [];
 let currentPage = null;
 
-///////////////////////////////////////////////////
-//////// TODOs ///////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-// Fill in the blanks below to complete each TODO task.                       //
-////////////////////////////////////////////////////////////////////////////////
 
-// TODO: Prompt the user for their name. Store the name in the variable `playerName`.
+
+// Prompt user for their name. Store the name in the variable `playerName`.
 playerName = prompt("What is your name?");
     
 
 
-// TODO: Create a function called `getCurrentPage()`. It should accept one
-// parameter, which is the `slug` for the current page. This function will fetch
+// Function will fetch
 // the current page and return a page object using the `slug` value for a key.
 function getCurrentPage(slug){
     currentPage = storyData[slug];
@@ -23,15 +18,15 @@ function getCurrentPage(slug){
 }
 
 
-// TODO: Create a function called `recordChoice()` that will accept a `slug`
-// parameter and add it to the `choiceList` Array (probably using `push()`).
+// Function will accept a `slug`
+// parameter and add it to the `choiceList` Array using `push`.
 function recordChoice(slug){
     choiceList.push(slug);
-    console.log(added ${slug} to choiceList Array.);
+    console.log('added ${slug} to choiceList Array.');
 }
 
 
-// TODO: Create a function called `undoChoice()` that will remove the last
+// Function will remove the last
 // `slug` in the `choiceList` Array and then will return the last `slug` in the
 // `choiceList` Array.
 function undoChoice(){
@@ -41,13 +36,13 @@ function undoChoice(){
 }
 
 
-// TODO: Create a function called `changePage()` that accepts a parameter called
-// `slug` and which handles "turning the page" in three steps:
-//  1. It should call the `recordChoice()` function (and give it the `slug` as
+// Function accepts a parameter called
+// `slug` and handles "turning the page" in three steps:
+//  1. Call the `recordChoice()` function (and give it the `slug` as
 //     a parameter.
-//  2. It should set the `currentPage` value by calling the `getCurrentPage()`
+//  2. Set the `currentPage` value by calling the `getCurrentPage()`
 //     function (and give it the `slug` as a parameter).
-//  3. It should invoke the `updatePage()` function (and give it the
+//  3. Invoke the `updatePage()` function (and give it the
 //     `currentPage` object as a parameter).
 
 function changePage(slug){
