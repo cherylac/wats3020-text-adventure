@@ -5,7 +5,7 @@ let currentPage = null;
 
 
 
-// Prompt user for their name. Store the name in the variable `playerName`.
+// Prompt user for their name. Store name in the variable `playerName`.
 playerName = prompt("What is your name?");
     
 
