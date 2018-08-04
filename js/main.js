@@ -127,7 +127,7 @@ var storyData = {
     basketEnd : {
         text: `You fly directly into a picnic basket, which slams shut behind you.
                 You are stuck until some kind human comes to open the basket.
-                But at least the cat didn't eat you!
+                But at least the cat didn't eat you, and there is some fruit left in the basket!
                 <br><br>
                 The End`,
         choices: [
